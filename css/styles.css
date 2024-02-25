@@ -1,3 +1,58 @@
-p {
-    font-size: 32px;
+:root {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    align-items: stretch;
+    height: 100%;
+}
+
+#intro {
+    background-image: url("../img/scott-webb-background.jpg");
+    background-color: rgb(78, 178, 204);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    flex: none;
+    text-align: center;
+    position: relative;
+    width: 500px;
+}
+
+#intro>p {
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    white-space: nowrap;
+}
+
+#signup {
+    margin: 0;
+    flex-grow: 2;
+}
+
+#banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    display: flex;
+    padding: 16px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#banner img {
+    width: 58px;
+    height: 75px;
 }
