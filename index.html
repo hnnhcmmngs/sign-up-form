@@ -19,12 +19,32 @@
         <p>You <em>know</em> you want to.</p>
         <form>
             <legend>Let's do this!</legend>
-            <input type="text" name="firstname" id="firstname">
-            <input type="text" name="lastname" id="lastname">
-            <input type="email" name="email" id="email">
-            <input type="tel" name="phonenumber" id="phonenumber">
-            <input type="password" name="password" id="password">
-            <input type="password" name="confirmpassword" id="confirmpassword">
+            <div>
+                <div class="info">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="info">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="info">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="info">
+                    <label for="phonenumber">PHONE NUMBER</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" required>
+                </div>
+                <div class="info">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="info">
+                    <label for="confirmpassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" required>
+                </div>
+            </div>
             <button type="submit">Create Account</button>
         </form>
         <p>Already have an account? <a href="#">Log in</a></p>
