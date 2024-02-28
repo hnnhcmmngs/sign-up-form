@@ -171,3 +171,16 @@ button {
 legend {
     width: 100%;
 }
+
+#signup a {
+    text-decoration: none;
+    color: rgb(196, 42, 48);
+    font-weight: bold;
+}
+
+form>div>div:nth-last-child(2)::after {
+    content: "* Passwords do not match";
+    font-size: 10px;
+    color: red;
+    visibility: hidden;
+}
