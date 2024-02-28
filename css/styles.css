@@ -52,19 +52,25 @@ body {
 
 #signup {
     margin: 0;
-    padding: 96px 36px;
+    padding: 96px 0;
     flex-grow: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 24px;
+    background-color: rgb(250, 250, 250);
 }
 
-#signup > * {
+#signup>* {
     margin: 0;
 }
 
-#signup p:first-child, #signup p:nth-child(2) {
+#signup p {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+#signup p:first-child, #signup p:nth-child(2), legend {
     font-size: 18px;
 }
 
@@ -106,6 +112,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding: 0;
 }
 
 form>div {
@@ -113,6 +120,13 @@ form>div {
     flex-flow: row wrap;
     gap: 24px;
     margin-bottom: 36px;
+    width: 100%;
+    padding: 0 36px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 8px;
+    background-color: white;
 }
 
 .info {
@@ -122,7 +136,38 @@ form>div {
 }
 
 label {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 11px;
+    font-weight: 400;
     color: rgb(55, 55, 55);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input {
+    border: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    height: 22px;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    width: 185px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(196, 42, 48);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 36px;
+}
+
+legend {
+    width: 100%;
 }
